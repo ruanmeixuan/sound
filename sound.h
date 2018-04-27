@@ -4,7 +4,7 @@
 // header file for processing sound (WAV) file.
 // define the wav header
 
-typedef struct{
+typedef struct{         // creates a synonym for char, int, unsigned int, unsigned short
         char chunkID[4];        // "RIFF"
         unsigned int chunkSize; // 4 bytes
         char format[4]; // "WAVE"
