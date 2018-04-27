@@ -44,7 +44,7 @@ void displayBar(char filename[]){
         sendToServer(rms_80);
 #endif
         gotoxy(0,0);
-        printf("%c[1;%dm",ESC, 37);
+        printf("%c[1;%dm",ESC, 37);	// printf - fflush(stdout) to make sure what you just wrote is written on screen
         fflush(stdout);
         printf("%s    ", filename);
         printf("%c[1;%dm",ESC, 32);
